@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HyperSpySampleExtension"
+authors = [{name = "HyperSpy developers"}]
+description = "A sample HyperSpy extension"
+license = {file = "LICENSE"}
+readme = {file = "README.md", content-type = "text/markdown"}
+version = "1.0"
+requires-python = ">= 3.8"
+dependencies = [
+    "hyperspy >= 2.2",
+    "numpy",
+    "pytest",
+    "traits",
+]
+keywords = ["sample hyperspy extension"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.entry-points."hyperspy.extensions"]
+hspy_ext = "hspy_ext"
+
+[project.urls]
+Source = "https://github.com/hyperspy/hyperspy_sample_extension"
+"Bug Reports" = "https://github.com/hyperspy/hyperspy_sample_extension/issues"
