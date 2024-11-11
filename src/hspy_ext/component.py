@@ -1,6 +1,7 @@
 from hyperspy.component import Component
-from traits.api import CBool
 from hyperspy.ui_registry import add_gui_method
+
+from traits.api import CBool
 
 
 @add_gui_method(toolkey="hspy_ext.MyComponent")
